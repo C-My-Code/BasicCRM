@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: GREY; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginScreenFXMLController">
+   <children>
+         <Label layoutX="240.0" layoutY="26.0" style="-fx-border-color: #2d9eef; -fx-border-width: 2;" text="Blue">
+            <font>
+               <Font name="Javanese Text" size="58.0" />
+            </font>
+         </Label>
+         <Label layoutX="247.0" layoutY="108.0" text="Schedule">
+            <font>
+               <Font name="Javanese Text" size="27.0" />
+            </font>
+         </Label>
+         <Label layoutX="278.0" layoutY="22.0" text="Little">
+            <font>
+               <Font name="Javanese Text" size="32.0" />
+            </font>
+         </Label>
+          <Circle fill="DODGERBLUE" layoutX="262.0" layoutY="63.0" radius="16.0" stroke="DODGERBLUE" strokeType="INSIDE" />
+         <Circle fill="#fafdff" layoutX="258.0" layoutY="63.0" radius="3.0" stroke="WHITE" strokeType="INSIDE" />
+      <Button fx:id="loginButton" layoutX="275.0" layoutY="349.0" mnemonicParsing="false" onAction="#logIn" text="Log In" />
+      <Pane layoutX="89.0" layoutY="227.0" prefHeight="112.0" prefWidth="423.0" style="-fx-border-image-width: 5; -fx-border-color: #1e90ff; -fx-background-color: #e6f3ff;">
+         <children>
+            <TextField fx:id="userNameField" layoutX="145.0" layoutY="17.0" />
+            <Label fx:id="passwordLabel" layoutX="21.0" layoutY="74.0" text="Password:" />
+            <Label fx:id="userLabel" layoutX="18.0" layoutY="21.0" text="UserName:" />
+            <PasswordField fx:id="passwordField" layoutX="145.0" layoutY="70.0" />
+            <Label fx:id="userErrorLabel" layoutX="301.0" layoutY="21.0" textFill="#e80606" />
+            <Label fx:id="passwordErrorLabel" layoutX="301.0" layoutY="74.0" textFill="RED" />
+         </children>
+      </Pane>
+      <Button fx:id="exitButton" layoutX="520.0" layoutY="362.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="25.0" prefWidth="53.0" text="Exit" />
+      <Label layoutX="256.0" layoutY="137.0" text="Manager">
+         <font>
+            <Font name="Javanese Text" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

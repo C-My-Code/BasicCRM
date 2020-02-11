@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-border-color: GREY; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewClientFileFXMLController">
+   <children>
+      <Label layoutX="74.0" layoutY="84.0" text="Customer ID" />
+      <Label layoutX="73.0" layoutY="147.0" text="Customer Name" />
+      <Label layoutX="463.0" layoutY="147.0" text="Phone" />
+      <Label layoutX="76.0" layoutY="216.0" text="Address 1" />
+      <Label layoutX="76.0" layoutY="276.0" text="Address 2" />
+      <Label layoutX="85.0" layoutY="328.0" text="City" />
+      <Label layoutX="85.0" layoutY="380.0" text="Country" />
+      <Label layoutX="465.0" layoutY="315.0" text="Postal Code" />
+      <TextField fx:id="customerid" editable="false" layoutX="185.0" layoutY="80.0" />
+      <TextField fx:id="customername" layoutX="185.0" layoutY="143.0" />
+      <TextField fx:id="customerphone" layoutX="540.0" layoutY="143.0" />
+      <TextField fx:id="customeraddress1" layoutX="185.0" layoutY="212.0" prefHeight="25.0" prefWidth="288.0" />
+      <TextField fx:id="customeraddress2" layoutX="185.0" layoutY="272.0" prefHeight="25.0" prefWidth="288.0" />
+      <TextField fx:id="customercity" layoutX="185.0" layoutY="324.0" />
+      <TextField fx:id="customercountry" layoutX="185.0" layoutY="376.0" />
+      <TextField fx:id="customerpostal" layoutX="540.0" layoutY="311.0" />
+      <Label layoutX="489.0" layoutY="45.0" text="Customer View">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="698.0" layoutY="558.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="73.0" text="Back" />
+      <Button layoutX="570.0" layoutY="558.0" mnemonicParsing="false" onAction="#saveCustomer" text="Save Changes" />
+      <Button layoutX="77.0" layoutY="558.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Delete" />
+      <Label fx:id="customernameerrorlabel" layoutX="185.0" layoutY="126.0" textFill="#e70707" />
+      <Label fx:id="customerphoneerrorlabel" layoutX="540.0" layoutY="126.0" textFill="#e70707" />
+      <Label fx:id="customeraddresserrorlabel" layoutX="185.0" layoutY="195.0" textFill="#e70707" />
+      <Label fx:id="customercityerrorlabel" layoutX="185.0" layoutY="307.0" textFill="#e70707" />
+      <Label fx:id="customercountryerrorlabel" layoutX="185.0" layoutY="359.0" textFill="#e70707" />
+      <Label fx:id="customerpostalerrorlabel" layoutX="540.0" layoutY="292.0" textFill="#e70707" />
+      <Label fx:id="successLabel" layoutX="386.0" layoutY="494.0" textFill="#3c00ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="562.0" text="Note: A change of Country will not be saved if City is not updated!" />
+   </children>
+</AnchorPane>
