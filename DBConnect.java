@@ -17,10 +17,10 @@ import java.util.Date;
  * @author Kevin
  */
 public class DBConnect {
-    private static final String databasename = "U05YHb";
-    public static final String username = "U05YHb";
-    private static final String password = "53688641037";
-    private static final String DB_URL = "jdbc:mysql://52.206.157.109";
+    private static final String databasename = "XXXXXXX";
+    public static final String username = "XXXXXX";
+    private static final String password = "XXXXXXXX";
+    private static final String DB_URL = "XXXXXXXXXX";
     private static final String driver = "com.mysql.jdbc.Driver";
     static Connection conn;
     
